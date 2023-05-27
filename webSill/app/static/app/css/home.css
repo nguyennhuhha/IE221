@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Jomhuria-Regular;
+    src:url('../fonts/Jomhuria-Regular.ttf');
+   }
+/* #main {
+
+} */
+
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    border-bottom: 1px solid #ccd1d6;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+#navmenu li {
+    font-family: Inter;
+    display: inline-block;
+}
+#logo {
+    position: absolute;
+    left: 4.03%;
+    right: 89.93%;
+    top: 32.43%;
+    bottom: 29.16%;
+
+    font-family: 'Jomhuria', cursive;
+    font-size: 60px;
+    color: #000000;
+}
+/* #content {
+
+}
+#footer {
+
+} */
