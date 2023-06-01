@@ -4,45 +4,233 @@
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol, ul {
+    padding-left: 0rem;
+}
 @font-face {
     font-family: Jomhuria-Regular;
-    src:url('../fonts/Jomhuria-Regular.ttf');
-   }
-/* #main {
-
-} */
-
+    src: url('../font/Jomhuria-Regular.ttf');
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url('../font/Inter-SemiBold.ttf');
+}
+@font-face {
+    font-family: Inter-Light;
+    src: url('../font/Inter-Light.ttf');
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url('../font/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url('../font/Inter-Bold.ttf');
+}
 #header {
+    display: flex;
+    box-sizing: border-box;
     height: 100px;
     width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 0px;
+    background: #FFFFFF;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
     border-bottom: 1px solid #ccd1d6;
     flex: 1;
     justify-content: flex-start;
     align-items: center;
+}
+#navmenu {
+    padding-left: 200px;
     display: flex;
 }
 #navmenu li {
-    font-family: Inter;
     display: inline-block;
+    
+}
+#navmenu li a{
+    font-family: Inter-Regular;
+    font-size: 18px;
+    color: #000000;
+    justify-content: space-between;
+    padding: 0 24px;
+    line-height: 100px;
+    text-decoration: none;
+}
+#navmenu li a:hover{
+    color: #71EEFF; 
 }
 #logo {
+    display: flex;
     position: absolute;
-    left: 5.62%;
-    right: 91.32%;
-    top: 33.33%;
-    bottom: 12.61%;
-
-
     font-family: 'Jomhuria', cursive;
     font-size: 60px;
     color: #000000;
+    padding-left: 80px;
+    padding-top: 20px;
 }
+#searchbox {
+    max-height: 60px;
+    max-width: 926px;
+    background-color: #fff;
+    border: 1px solid #ccd1d6;
+    color: #ccc;
+    border-radius: 30px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 6px 6px 32px;
+    display: flex;
+}
+#searchbox img {
+    padding-right: 10px;
+
+}
+button {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+#search-text{
+    border: none;
+    color: #000000;
+    outline: none;
+}
+::placeholder { 
+    color: #ccd1d6;     /* Firefox, Chrome, Opera */
+}
+#search-button {
+    background-color: #14181f;
+    border-radius: 30px;
+    margin-left: 1rem;
+    padding: 1rem 1.75rem 1rem 2rem;
+    line-height: 1rem;
+}
+#search-button:hover {
+    background-color: #71EEFF;
+    border: #71EEFF;
+}
+#contact{
+    z-index: 1;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    color: #fff;
+    letter-spacing: -.02em;
+    cursor: pointer;
+    background-color: #71EEFF;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32.5px;
+    line-height: 1rem;
+    display: flex;
+    position: relative;
+    box-shadow: 3px 4px 0px #000000;
+    margin-right: auto;
+}
+
 /* #content {
 
-}
-#footer {
+}*/
+footer {
+    border-top: 1px solid #ccd1d6;
+    bottom: 0;
+    left: 0;
+    display: inline;
+    width: 100%;
+    position: absolute;
+    height: 400px;
+    
+} 
+#logoft{
+    display: flex;
+    position: absolute;
+    font-family: 'Jomhuria', cursive;
+    font-size: 60px;
+    color: #000000;
+    padding-top: 30px;
+    padding-left: 157px;
 
-} */
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.3 * var(--bs-gutter-x));
+    margin-left: calc(-.3 * var(--bs-gutter-x));
+    padding-top: 150px;
+    justify-content: center;
+}
+.nav-illtypes{
+    flex: 0 0 auto;
+    width: 30%;
+}
+.illustration{
+    font-family: Inter-Semibold;
+    font-size: 16px;
+
+}
+.types{
+    list-style: none;
+    padding-left: 0;
+}
+.types li a{
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color:#6A7081;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.nav-our {
+    flex: 0 0 auto;
+    width: 20%;
+}
+.our{
+    font-family: Inter-Semibold;
+    font-size: 16px;
+}
+.type{
+    list-style: none;
+    padding-left: 0;
+}
+.type li a{
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color:#6A7081;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+.nav-about{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.nav-about .aboutcom {
+    font-family: Inter-Semibold;
+    font-size: 20px;
+}
+.aboutcompany {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-about .nav-social .socialmedia{
+    font-family: Inter-Semibold;
+    font-size: 16px;
+    padding-top: 30px;
+}
+.socialmedia-icon {
+    justify-content: space-between;
+}

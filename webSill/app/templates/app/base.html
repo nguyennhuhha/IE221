@@ -20,7 +20,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
-        <title>Sill - Beautiful illustrations</title>
+        <title>Sill - Awesome illustrations</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static "app/css/base.css" %}">
@@ -32,13 +32,23 @@
             <!--header-->
             <div id="header">
                 <div id="logo">Sill</div>
-                <div id="nav">
-                    <ul id="navmenu">
-                        <li><a href="#">2D</a></li>
-                        <li><a href="#">3D</a></li>
-                        <li><a href="#">Icon</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
+                <ul id="navmenu">
+                    <li><a href="#">2D</a></li>
+                    <li><a href="#">3D</a></li>
+                    <li><a href="#">Icon</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <div id="searchbox"> 
+                    <img loading="lazy" src="{% static "app/images/header/search.svg" %}" alt="search">
+                    {% comment %} src="{% static "img/img_header/address_icon.png" %}" {% endcomment %}
+                    <input type="text" id="search-text" placeholder="Categories, types, topics, etc" maxlength="256">
+                    
+                    <button id="search-button">Search</button>
+    
+                </div>
+                <div id='contact'>
+                    <div>Contact Us</div>
+
                 </div>
                 {% comment %} <div id="search">
                     <input type="text" placeholder="Search...">
@@ -48,9 +58,46 @@
             <!--main-content-->
             {% block main-content %}{% endblock main-content %}
             <!--footer-->
-            <div id="footer">
-
-            </div>
+            <footer id="footer">
+                <div id="logoft">Sill</div>
+                <div class="row">
+                    <div class="nav-illtypes">
+                        <div class="nav-illtypes illustration">Illstration Types</div>
+                        <ul class="types">
+                            <li><a href="#">2D</a></li>
+                            <li><a href="#">3D</a></li>
+                            <li><a href="#">Icon</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-our">
+                        <div class="our">Our team</div>
+                        <ul class="type">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-about">
+                        <div class="aboutcom">About The Company</div>
+                        <ul class="aboutcompany">
+                            <li><a>We sell a variety of Illustrator designs online. Find your perfect design today!</a></li>
+                        </ul>
+                        <div class="nav-social">
+                            <div class="socialmedia">Social Media</div>
+                            <ul class="socialmedia-icon">
+                                    <a href="https://www.facebook.com/sill.awes/">
+                                        <img src="{% static "app/images/footer/FB.svg"%}" alt="facebook">
+                                    </a>
+                                    <a href="https://twitter.com/sill_awes">
+                                        <img src="{% static "app/images/footer/twitter.svg"%}" alt="twitter">
+                                    </a>
+                                    <a href="https://www.instagram.com/sill.awes/">
+                                        <img src="{% static "app/images/footer/Ins.svg"%}" alt="inst">
+                                    </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>  
     </body>
 </html>
