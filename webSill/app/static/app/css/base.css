@@ -43,8 +43,7 @@ ol, ul {
     bottom: 0%;
     top: 0%;
     border-bottom: 1px solid #ccd1d6;
-    flex: 1;
-    justify-content: flex-start;
+    bottom: auto;
     align-items: center;
 }
 #navmenu {
@@ -142,22 +141,26 @@ button {
 
 }*/
 footer {
-    border-top: 1px solid #ccd1d6;
+    
     bottom: 0;
     left: 0;
     display: inline;
     width: 100%;
-    position: absolute;
+
     height: 400px;
     
 } 
+#footercontent {
+    border-top: 1px solid #ccd1d6;
+    padding-top: 30px;
+}
 #logoft{
     display: flex;
     position: absolute;
     font-family: 'Jomhuria', cursive;
     font-size: 60px;
     color: #000000;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-left: 157px;
 
 }
