@@ -169,32 +169,41 @@ footer {
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.3 * var(--bs-gutter-x));
     margin-left: calc(-.3 * var(--bs-gutter-x));
-    padding-top: 150px;
+    padding-top: 70px;
     justify-content: center;
 }
 .nav-illtypes{
     flex: 0 0 auto;
-    width: 30%;
+    width: 20%;
+    padding-top: 60px;
 }
 .illustration{
     font-family: Inter-Semibold;
     font-size: 16px;
-
+    width:100%;
 }
 .types{
     list-style: none;
     padding-left: 0;
+    padding-top: 30px;
 }
-.types li a{
+.linkft{
     font-family: Inter-Regular;
     font-size: 16px;
     color:#6A7081;
     justify-content: space-between;
     text-decoration: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.linkft:hover{
+    text-decoration: underline;
 }
 .nav-our {
     flex: 0 0 auto;
     width: 20%;
+    padding-top: 60px;
 }
 .our{
     font-family: Inter-Semibold;
@@ -203,18 +212,13 @@ footer {
 .type{
     list-style: none;
     padding-left: 0;
+    padding-top: 30px;
 }
-.type li a{
-    font-family: Inter-Regular;
-    font-size: 16px;
-    color:#6A7081;
-    justify-content: space-between;
-    text-decoration: none;
-    
-}
+
 .nav-about{
     flex: 0 0 auto;
     width: 25%;
+    padding-left: 80px;
 }
 .nav-about .aboutcom {
     font-family: Inter-Semibold;
@@ -225,12 +229,21 @@ footer {
     font-size: 16px;
     justify-content: space-between;
     list-style: none;
+    padding-top: 15px;
+    width: 320px;
 }
 .nav-about .nav-social .socialmedia{
     font-family: Inter-Semibold;
     font-size: 16px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 .socialmedia-icon {
     justify-content: space-between;
+    padding-top: 20px;
+}
+ul.socialmedia-icon a img{
+    padding-right: 20px;
+}
+ul.socialmedia-icon a {
+    text-decoration: none;
 }
