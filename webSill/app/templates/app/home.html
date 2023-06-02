@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block linkcss%}
+<link rel="stylesheet" href="{% static "app/css/home.css" %}" type="text/css">
+{% endblock %}
+
+{% block main-content%}
+    <div id="container">
+        <div class="container1">
+            <h1 class="headline">Your wonderful source for all things creative</h1>
+            <img src="{% static "app/images/body/Girlhome.png"%}" alt="Banner1">
+        </div>
+
+        <div class="banner">
+        </div>
+    </div>
+{% endblock main-content %}

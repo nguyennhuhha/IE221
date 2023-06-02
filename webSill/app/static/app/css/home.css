@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+#container {
+    padding-top: 180px ;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: auto;
+    height: auto;
+}
+.container1 {
+    font-family: Inter-Semibold;
+    font-size: 60px;
+}
