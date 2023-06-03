@@ -11,6 +11,9 @@ dl, ol, ul {
 ol, ul {
     padding-left: 0rem;
 }
+a {
+    text-decoration: none;
+}
 @font-face {
     font-family: Jomhuria-Regular;
     src: url('../font/Jomhuria-Regular.ttf');
@@ -117,6 +120,13 @@ button {
 #search-button:hover {
     background-color: #71EEFF;
     border: #71EEFF;
+}
+#buttoncontact {
+    margin-left: auto;
+    margin-right: auto;
+}
+#buttoncontact a{
+    text-decoration: none;
 }
 #contact{
     z-index: 1;

@@ -12,6 +12,32 @@
     height: auto;
 }
 .container1 {
-    font-family: Inter-Semibold;
+    
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.headline{
+    font-family: Inter-Bold;
     font-size: 60px;
+    font-weight: 800;
+    width: 800px;
+    text-align: center;
+}
+.container1 img{
+    width:250px;
+    padding-top: 60px;
+}
+.headline2{
+    font-family: Inter-Regular;
+    font-size: 24px;
+    text-align: center;
+    width: 600px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.banner{
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 30px;
 }
