@@ -1,1 +1,10 @@
-<h1> Tran vi khang dep trai </h1>
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block linkcss%}
+<link rel="stylesheet" href="{% static "app/css/Icon.css" %}" type="text/css">
+{% endblock %}
+
+{% block main-content%}
+<h1>This is 2D page</h1>
+{%endblock%}
