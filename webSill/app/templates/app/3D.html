@@ -2,9 +2,64 @@
 {% load static %}
 
 {% block linkcss%}
-<link rel="stylesheet" href="{% static "app/css/Icon.css" %}" type="text/css">
+<link rel="stylesheet" href="{% static "app/css/3D.css" %}" type="text/css">
 {% endblock %}
 
 {% block main-content%}
-<h1>This is 3D page</h1>
-{%endblock%}
+
+
+    <div id="container">
+        <div class="container1">
+            <header>
+                <h1 class="headline">3D Illustrations & Icons</h1>
+                <h2 class="headline2">Explore our curated 3D illustrations & icons featuring characters, scenes and icons.
+                </h2>
+            </header>
+            
+            <div class="product">
+                <div class = "product-list">
+                    <div class = "product-item">
+                        <a href ="/" class="linkproduct"> 
+                            <div class="bgproduct">
+                                <img src="{% static "app/images/body/bg_box.svg"%}" ">
+                                <div class="imageproduct">
+                                    <img src="{% static "app/images/body/pic4.png"%}" ">
+                                </div>
+                                <h3 class="nameproduct">3D Christmas Illustrations & Icons</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class = "product-item">
+                        <a href ="/" class="linkproduct"> 
+                            <div class="bgproduct">
+                                <img src="{% static "app/images/body/bg_box.svg"%}" ">
+                                <div class="imageproduct">
+                                    <img src="{% static "app/images/body/pic5.png"%}" ">
+                                </div>
+                                <h3 class="nameproduct">3D Food & Nutrition Icons</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class = "product-item">
+                        <a href ="/" class="linkproduct"> 
+                            <div class="bgproduct">
+                                <img src="{% static "app/images/body/bg_box.svg"%}" ">
+                                <div class="imageproduct">
+                                    <img src="{% static "app/images/body/pic6.png"%}" ">
+                                </div>
+                                <h3 class="nameproduct">3D Education & Teaching Illustrations</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+{%endblock main-content%}

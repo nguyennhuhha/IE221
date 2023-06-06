@@ -2,9 +2,61 @@
 {% load static %}
 
 {% block linkcss%}
-<link rel="stylesheet" href="{% static "app/css/Icon.css" %}" type="text/css">
+<link rel="stylesheet" href="{% static "app/css/2D.css" %}" type="text/css">
 {% endblock %}
 
 {% block main-content%}
-<h1>This is 2D page</h1>
+    <div id="container">
+        <div class="container1">
+            <header>
+                <h1 class="headline">2D Illustrations</h1>
+                <h2 class="headline2">Explore our hand-drawn and curated vector 2D Illustrations.
+                </h2>
+            </header>
+            
+            <div class="product">
+                <div class = "product-list">
+                    <div class = "product-item">
+                        <a href ="/" class="linkproduct"> 
+                            <div class="bgproduct">
+                                <img src="{% static "app/images/body/bg_box.svg"%}" ">
+                                <div class="imageproduct">
+                                    <img src="{% static "app/images/body/pic1.png"%}" ">
+                                </div>
+                                <h3 class="nameproduct"> Education Stickers Illustrations</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class = "product-item">
+                        <a href ="/" class="linkproduct"> 
+                            <div class="bgproduct">
+                                <img src="{% static "app/images/body/bg_box.svg"%}" ">
+                                <div class="imageproduct">
+                                    <img src="{% static "app/images/body/pic2.png"%}" ">
+                                </div>
+                                <h3 class="nameproduct">Government & Leaders Illustrations</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class = "product-item">
+                        <a href ="/" class="linkproduct"> 
+                            <div class="bgproduct">
+                                <img src="{% static "app/images/body/bg_box.svg"%}" ">
+                                <div class="imageproduct">
+                                    <img src="{% static "app/images/body/pic3.png"%}" ">
+                                </div>
+                                <h3 class="nameproduct">Real Estate & Homeowner Illustrations</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
 {%endblock%}
